@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonedaAPI", "MonedaAPI\MonedaAPI.csproj", "{0D197D54-6B0A-4794-A417-709593B76B17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{987F020A-213F-4BD6-ACDD-3228F251FBF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonedaAPI.Tests", "MonedaAPI.Tests\MonedaAPI.Tests.csproj", "{0109991B-CA4D-415D-AC4D-2A0DDFEB10BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer.Tests", "ServiceLayer.Tests\ServiceLayer.Tests.csproj", "{3CFA374D-6ED2-4597-B079-2792BBBF9928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLayer", "ModelLayer\ModelLayer.csproj", "{68ECAA30-6C46-489D-A4DB-F47D8E00797D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{5541E506-A4C7-4C6C-AD5D-6526634F5FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{E38FCCF0-C59D-4812-A5BD-D4CC7935FDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D197D54-6B0A-4794-A417-709593B76B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D197D54-6B0A-4794-A417-709593B76B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D197D54-6B0A-4794-A417-709593B76B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D197D54-6B0A-4794-A417-709593B76B17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0109991B-CA4D-415D-AC4D-2A0DDFEB10BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0109991B-CA4D-415D-AC4D-2A0DDFEB10BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0109991B-CA4D-415D-AC4D-2A0DDFEB10BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0109991B-CA4D-415D-AC4D-2A0DDFEB10BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987F020A-213F-4BD6-ACDD-3228F251FBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987F020A-213F-4BD6-ACDD-3228F251FBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987F020A-213F-4BD6-ACDD-3228F251FBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987F020A-213F-4BD6-ACDD-3228F251FBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFA374D-6ED2-4597-B079-2792BBBF9928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFA374D-6ED2-4597-B079-2792BBBF9928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFA374D-6ED2-4597-B079-2792BBBF9928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFA374D-6ED2-4597-B079-2792BBBF9928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68ECAA30-6C46-489D-A4DB-F47D8E00797D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68ECAA30-6C46-489D-A4DB-F47D8E00797D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68ECAA30-6C46-489D-A4DB-F47D8E00797D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68ECAA30-6C46-489D-A4DB-F47D8E00797D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5541E506-A4C7-4C6C-AD5D-6526634F5FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5541E506-A4C7-4C6C-AD5D-6526634F5FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5541E506-A4C7-4C6C-AD5D-6526634F5FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5541E506-A4C7-4C6C-AD5D-6526634F5FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38FCCF0-C59D-4812-A5BD-D4CC7935FDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38FCCF0-C59D-4812-A5BD-D4CC7935FDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38FCCF0-C59D-4812-A5BD-D4CC7935FDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38FCCF0-C59D-4812-A5BD-D4CC7935FDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
