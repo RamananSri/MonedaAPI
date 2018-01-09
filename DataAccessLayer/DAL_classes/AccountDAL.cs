@@ -10,22 +10,22 @@ namespace DataAccessLayer.DAL_classes
 {
     public class AccountDAL : IAccountDAL
     {
-        public void AddAccount(Account account)
+        public AccountDAL()
+        {
+
+        }
+
+        public void DeleteAccount(string id)
+        {
+            //
+        }
+
+        public void GetAccount(string id)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteAccount(Account account)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Account getBalance(Account account)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void PostBalance(int amount)
+        public void PostAccount(Account account)
         {
             throw new NotImplementedException();
         }

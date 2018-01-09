@@ -18,27 +18,22 @@ namespace BusinessLayer
             db = new AccountDAL();
         }
 
-        public void AddAccount(Account account)
+        public void DeleteAccount(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteAccount(Account account)
+        public void GetAccount(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void GetBalance(Account account)
+        public void PostAccount(Account account)
         {
             throw new NotImplementedException();
         }
 
-        public void PostBalance(int amount)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void PutAccount(Account account)
+        public void PutAccount(int id)
         {
             throw new NotImplementedException();
         }
