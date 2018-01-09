@@ -1,15 +1,23 @@
-﻿using DataAccessLayer.Interfaces;
-using ModelLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessLayer.Interfaces;
+using DataAccessLayer.DAL_classes;
+using DataAccessLayer.Interfaces;
+using ModelLayer;
 
-namespace DataAccessLayer.DAL_classes
+namespace BusinessLayer
 {
-    public class AccountDAL : IAccountDAL
+    public class AccountBLL : IAccountBLL
     {
+        IAccountDAL db;
+        public AccountBLL()
+        {
+            db = new AccountDAL();
+        }
+
         public void AddAccount(Account account)
         {
             throw new NotImplementedException();
@@ -20,7 +28,7 @@ namespace DataAccessLayer.DAL_classes
             throw new NotImplementedException();
         }
 
-        public Account getBalance(Account account)
+        public void GetBalance(Account account)
         {
             throw new NotImplementedException();
         }

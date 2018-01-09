@@ -61,6 +61,7 @@
     <Compile Include="DAL_classes\CashFlowDAL.cs" />
     <Compile Include="DAL_classes\UserDAL.cs" />
     <Compile Include="DomainContext.cs" />
+    <Compile Include="Interfaces\IAccountDAL.cs" />
     <Compile Include="Interfaces\IUserDAL.cs" />
     <Compile Include="Migrations\201801081227532_Initial.cs" />
     <Compile Include="Migrations\201801081227532_Initial.Designer.cs">

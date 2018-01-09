@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountBLL.cs" />
+    <Compile Include="Interfaces\IAccountBLL.cs" />
     <Compile Include="Interfaces\IUserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserBLL.cs" />
