@@ -37,6 +37,11 @@ namespace BusinessLayer
             {
                 u = db.GetUser(user.Username);
             }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex);
+                throw;
+            }
             catch (Exception)
             {
                 throw;
@@ -45,10 +50,8 @@ namespace BusinessLayer
             if (u.Password != user.Password)
             {
                 //TODO: Exception der svarer til statuscode??
-                throw new Exception();
+                throw new NullReferenceException();
             }
-
-            return;
         }
 
         public void PostUser(User user)

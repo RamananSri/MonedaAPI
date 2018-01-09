@@ -12,26 +12,33 @@ namespace ServiceLayer.Controllers
 {
     public class LoginController : ApiController
     {
-        IUserBLL db;
+        IUserBLL userBLL;
 
         public LoginController()
         {
-            db = new UserBLL();
+            userBLL = new UserBLL();
         }
 
         public IHttpActionResult Post(User user)
-        { 
+        {
             try
             {
-                db.Login(user);
+                userBLL.Login(user);
+            }
+            catch (InvalidOperationException)
+            {
+                return Content(HttpStatusCode.NotFound, "Brugernavn eller password passer ikke");
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return NotFound();
+                return Content(HttpStatusCode.InternalServerError,"Server fejl");
             }
 
             return Ok();
+           
+            
+            
         }
     }
 }

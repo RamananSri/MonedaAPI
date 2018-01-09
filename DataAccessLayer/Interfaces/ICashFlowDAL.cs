@@ -9,8 +9,8 @@ namespace DataAccessLayer.Interfaces
 {
     interface ICashFlowDAL
     {
-        List<CashFlow>
-        CashFlow GetCashFlow(int id);
+        //List<CashFlow>
+        //CashFlow GetCashFlow(int id);
         void PostCashFlow(CashFlow cashflow);
         void DeleteCashFlow(int id);
         void PutCashFlow(CashFlow cashflow);

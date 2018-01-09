@@ -29,17 +29,10 @@ namespace DataAccessLayer.DAL_classes
                     var user = ctx.users
                                .Where(u => u.Username == username)
                                .First();
-                    if(user != null)
-                    {
-                        return user;
-                    }
-                    else
-                    {
-                        throw new NullReferenceException();
-                    }             
+                    return user;           
                 }
             }
-            catch (NullReferenceException)
+            catch (InvalidOperationException)
             {
                 throw;
             }
