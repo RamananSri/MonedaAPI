@@ -11,10 +11,11 @@ namespace BusinessLayer.Interfaces
 
     public interface IAccountBLL
     {
-        void GetBalance(Account account);
-        void AddAccount(Account account);
-        void PostBalance(int amount);
-        void DeleteAccount(Account account);
-        void PutAccount(Account account);
+        void PostAccount(Account account);
+        void GetAccount(int id);
+        void DeleteAccount(int id);
+        void PutAccount(int id);
+        // TODO lav updatebalance?
+        //void updateBalance();
     }
 }

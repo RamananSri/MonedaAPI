@@ -9,10 +9,9 @@ namespace DataAccessLayer.Interfaces
 {
     public interface IAccountDAL
     {
-        Account getBalance(Account account);
-        void PostBalance(int amount);
-        void DeleteAccount(Account account);
-        void AddAccount(Account account);
+        void PostAccount(Account account);
+        void DeleteAccount(string id);
+        void GetAccount(string id);
         void PutAccount(Account account);
     }
 }
