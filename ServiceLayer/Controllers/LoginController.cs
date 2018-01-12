@@ -24,21 +24,16 @@ namespace ServiceLayer.Controllers
             try
             {
                 userBLL.Login(user);
+                return Ok();
             }
             catch (InvalidOperationException)
             {
                 return Content(HttpStatusCode.NotFound, "Brugernavn eller password passer ikke");
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
                 return Content(HttpStatusCode.InternalServerError,"Server fejl");
-            }
-
-            return Ok();
-           
-            
-            
+            }    
         }
     }
 }

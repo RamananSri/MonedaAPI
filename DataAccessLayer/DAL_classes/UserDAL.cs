@@ -36,16 +36,30 @@ namespace DataAccessLayer.DAL_classes
             {
                 throw;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
                 throw;
             }
         }
 
         public void PostUser(User user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using(DomainContext ctx = new DomainContext())
+                {
+                    ctx.users.Add(user);
+                    ctx.SaveChanges();
+                }
+            }
+            catch (InvalidOperationException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void PutUser(User user)

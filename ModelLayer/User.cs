@@ -13,9 +13,6 @@ namespace ModelLayer
         [Key]
         public string Username { get; set; }
         public string Password { get; set; }
-
-        //[ForeignKey("Account")]
-        //public int AccountId { get; set; }
-        public Account Account { get; set; }
+        public virtual List<Account> Accounts { get; set; }
     }
 }
