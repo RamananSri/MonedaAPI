@@ -72,6 +72,26 @@
     <Compile Include="Migrations\201801081319193_updated keys.Designer.cs">
       <DependentUpon>201801081319193_updated keys.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801121316406_good migration hehe.cs" />
+    <Compile Include="Migrations\201801121316406_good migration hehe.Designer.cs">
+      <DependentUpon>201801121316406_good migration hehe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801121346589_new migration.cs" />
+    <Compile Include="Migrations\201801121346589_new migration.Designer.cs">
+      <DependentUpon>201801121346589_new migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801121353409_failure.cs" />
+    <Compile Include="Migrations\201801121353409_failure.Designer.cs">
+      <DependentUpon>201801121353409_failure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801121354217_ok.cs" />
+    <Compile Include="Migrations\201801121354217_ok.Designer.cs">
+      <DependentUpon>201801121354217_ok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801121356141_works now.cs" />
+    <Compile Include="Migrations\201801121356141_works now.Designer.cs">
+      <DependentUpon>201801121356141_works now.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -91,6 +111,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801081319193_updated keys.resx">
       <DependentUpon>201801081319193_updated keys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121316406_good migration hehe.resx">
+      <DependentUpon>201801121316406_good migration hehe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121346589_new migration.resx">
+      <DependentUpon>201801121346589_new migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121353409_failure.resx">
+      <DependentUpon>201801121353409_failure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121354217_ok.resx">
+      <DependentUpon>201801121354217_ok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121356141_works now.resx">
+      <DependentUpon>201801121356141_works now.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

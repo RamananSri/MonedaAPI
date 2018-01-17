@@ -37,9 +37,8 @@ namespace BusinessLayer
             {
                 u = db.GetUser(user.Username);
             }
-            catch (InvalidOperationException ex)
+            catch (InvalidOperationException)
             {
-                Console.WriteLine(ex);
                 throw;
             }
             catch (Exception)
@@ -56,7 +55,18 @@ namespace BusinessLayer
 
         public void PostUser(User user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.PostUser(user);
+            }
+            catch (InvalidOperationException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void PutUser(User user)
